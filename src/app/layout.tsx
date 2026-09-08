@@ -14,21 +14,40 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://lift-gold-premium.vercel.app"),
   title: "Lift Gold | Cuidado Premium para a Pele",
   description:
-    "Lift Gold: uma opção premium para sua rotina de cuidados com a pele. Conheça os kits disponíveis e escolha o seu.",
+    "Conheça o Lift Gold, cuidado premium para a pele, com foco em hidratação, firmeza e aparência mais radiante. Confira os kits disponíveis.",
+  alternates: {
+    canonical: "https://lift-gold-premium.vercel.app/",
+  },
   openGraph: {
     title: "Lift Gold | Cuidado Premium para a Pele",
     description:
-      "Lift Gold: uma opção premium para sua rotina de cuidados com a pele. Conheça os kits disponíveis e escolha o seu.",
-    type: "website",
+      "Conheça o Lift Gold, cuidado premium para a pele, com foco em hidratação, firmeza e aparência mais radiante. Confira os kits disponíveis.",
+    url: "https://lift-gold-premium.vercel.app/",
+    siteName: "Lift Gold",
+    images: [
+      {
+        url: "/images/lift-gold.png",
+        width: 1200,
+        height: 630,
+        alt: "Lift Gold – Cuidado Premium para a Pele",
+      },
+    ],
     locale: "pt_BR",
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Lift Gold | Cuidado Premium para a Pele",
     description:
-      "Lift Gold: uma opção premium para sua rotina de cuidados com a pele. Conheça os kits disponíveis e escolha o seu.",
+      "Conheça o Lift Gold, cuidado premium para a pele, com foco em hidratação, firmeza e aparência mais radiante. Confira os kits disponíveis.",
+    images: ["/images/lift-gold.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
