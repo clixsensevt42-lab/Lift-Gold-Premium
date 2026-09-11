@@ -121,6 +121,8 @@ const KITS = [
     total: "2 Frascos de Lift Gold",
     breakdown: "1 Frasco + 1 de Brinde",
     bonus: "1 + 1 DE BRINDE",
+    relation: "Pague 1 • Receba 2",
+    perBottle: "R$ 73,93 por frasco recebido",
     bottles: 2,
     featured: false,
   },
@@ -138,6 +140,8 @@ const KITS = [
     total: "4 Frascos de Lift Gold",
     breakdown: "2 Frascos + 2 de Brinde",
     bonus: "2 + 2 DE BRINDE",
+    relation: "Pague 2 • Receba 4",
+    perBottle: "R$ 67,48 por frasco recebido",
     bottles: 4,
     featured: true,
   },
@@ -155,6 +159,8 @@ const KITS = [
     total: "6 Frascos de Lift Gold",
     breakdown: "3 Frascos + 3 de Brinde",
     bonus: "3 + 3 DE BRINDE",
+    relation: "Pague 3 • Receba 6",
+    perBottle: "R$ 63,31 por frasco recebido",
     bottles: 6,
     featured: false,
   },
@@ -729,6 +735,9 @@ export default function Home() {
                     <p className="mt-0.5 text-sm font-bold text-[#D4AF37]">
                       {kit.bonus}
                     </p>
+                    <p className="mt-2 border-t border-[#D4AF37]/20 pt-2 text-sm font-bold uppercase tracking-wider text-white">
+                      {kit.relation}
+                    </p>
                   </div>
                 </div>
 
@@ -758,6 +767,9 @@ export default function Home() {
                   </p>
                   <p className="mt-1 text-4xl font-extrabold text-[#D4AF37] drop-shadow-[0_0_25px_rgba(212,175,55,0.4)]">
                     {kit.price}
+                  </p>
+                  <p className="mx-auto mt-3 w-fit rounded-full border border-[#D4AF37]/40 bg-[#D4AF37]/10 px-4 py-1.5 text-sm font-semibold text-[#D4AF37]">
+                    {kit.perBottle}
                   </p>
                 </div>
 
